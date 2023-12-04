@@ -1,0 +1,234 @@
+$owners = [
+    [
+        "email" => "riky.gigi@live.com",
+        "password" => "hjdchjb",
+        "nameCognome" => "Gigi Calogero",
+        "Piva" => 12345678910,
+        "address" => "via roma 3",
+    ],
+    [
+        "email" => "john.doe@example.com",
+        "password" => "abc123",
+        "nameCognome" => "John Doe",
+        "Piva" => 98765432101,
+        "address" => "123 Main St",
+    ],
+    [
+        "email" => "alice.smith@example.com",
+        "password" => "xyz456",
+        "nameCognome" => "Alice Smith",
+        "Piva" => 55555555555,
+        "address" => "456 Oak Ave",
+    ],
+    [
+        "email" => "sara.jones@example.com",
+        "password" => "pass789",
+        "nameCognome" => "Sara Jones",
+        "Piva" => 11112222333,
+        "address" => "789 Pine Rd",
+    ],
+    [
+        "email" => "mario.rossi@example.com",
+        "password" => "mypass",
+        "nameCognome" => "Mario Rossi",
+        "Piva" => 44446666777,
+        "address" => "567 Birch Lane",
+    ],
+    [
+        "email" => "emma.white@example.com",
+        "password" => "emma123",
+        "nameCognome" => "Emma White",
+        "Piva" => 88889999000,
+        "address" => "890 Cedar Street",
+    ],
+];
+
+
+
+
+
+
+$restaurants = [
+    [
+        "name" => "rosso pomodoro",
+        "rating" => 3.00,
+        "cover_image" => "",
+    ],
+    [
+        "name" => "green garden",
+        "rating" => 4.50,
+        "cover_image" => "green_garden.jpg",
+    ],
+    [
+        "name" => "ocean delight",
+        "rating" => 4.20,
+        "cover_image" => "ocean_delight.png",
+    ],
+    [
+        "name" => "spicy sensation",
+        "rating" => 3.80,
+        "cover_image" => "spicy_sensation.jpeg",
+    ],
+    [
+        "name" => "sweet retreat",
+        "rating" => 4.75,
+        "cover_image" => "sweet_retreat.jpg",
+    ],
+    [
+        "name" => "urban bites",
+        "rating" => 4.10,
+        "cover_image" => "urban_bites.png",
+    ],
+];
+
+
+$products = [
+    [
+        "name" => "hamburger con patatine",
+        "price" => 10,
+        "description" => "Questo hamburger è un connubio perfetto tra il sapore delle carni scelte e le salse.",
+        "ingredients" => ['pane', 'hamburger', 'maionese', 'ketchup', 'patatine', 'lattuga'],
+        "is_available" => true,
+        "cover_image" => "",
+        "allergen_tags" => [
+            'lactose' => true,
+            'gluten' => false,
+            'shellfish' => false,
+            'corn' => false,
+            'nuts' => false,
+        ],
+    ],
+    [
+        "name" => "pizza margherita",
+        "price" => 12,
+        "description" => "Una deliziosa pizza con pomodoro, mozzarella e basilico.",
+        "ingredients" => ['impasto', 'pomodoro', 'mozzarella', 'basilico'],
+        "is_available" => true,
+        "cover_image" => "pizza_margherita.jpg",
+        "allergen_tags" => [
+            'lactose' => true,
+            'gluten' => true,
+            'shellfish' => false,
+            'corn' => false,
+            'nuts' => false,
+        ],
+    ],
+    [
+        "name" => "insalata mista",
+        "price" => 8,
+        "description" => "Un'insalata fresca con varietà di verdure di stagione.",
+        "ingredients" => ['lattuga', 'pomodoro', 'carote', 'cipolla', 'olive'],
+        "is_available" => true,
+        "cover_image" => "insalata_mista.jpg",
+        "allergen_tags" => [
+            'lactose' => false,
+            'gluten' => false,
+            'shellfish' => false,
+            'corn' => false,
+            'nuts' => false,
+        ],
+    ],
+    [
+        "name" => "spaghetti alla bolognese",
+        "price" => 14,
+        "description" => "Spaghetti con ragù di carne ricco e saporito.",
+        "ingredients" => ['spaghetti', 'carne macinata', 'pomodoro', 'cipolla', 'aglio'],
+        "is_available" => true,
+        "cover_image" => "spaghetti_bolognese.jpg",
+        "allergen_tags" => [
+            'lactose' => true,
+            'gluten' => true,
+            'shellfish' => false,
+            'corn' => false,
+            'nuts' => false,
+        ],
+    ],
+    [
+        "name" => "insalata di frutta",
+        "price" => 9,
+        "description" => "Un'insalata fresca e dolce con frutta di stagione.",
+        "ingredients" => ['mela', 'kiwi', 'fragole', 'ananas', 'uva'],
+        "is_available" => true,
+        "cover_image" => "insalata_di_frutta.jpg",
+        "allergen_tags" => [
+            'lactose' => false,
+            'gluten' => false,
+            'shellfish' => false,
+            'corn' => false,
+            'nuts' => false,
+        ],
+    ],
+    [
+        "name" => "sushi assortito",
+        "price" => 18,
+        "description" => "Una selezione di sushi fresco e prelibato.",
+        "ingredients" => ['riso', 'pesce crudo', 'alga nori', 'wasabi', 'soia'],
+        "is_available" => true,
+        "cover_image" => "sushi_assortito.jpg",
+        "allergen_tags" => [
+            'lactose' => false,
+            'gluten' => false,
+            'shellfish' => true,
+            'corn' => false,
+            'nuts' => false,
+        ],
+    ],
+];
+
+
+
+$orders = [
+    [
+        'address' => 'vicolo diomede pantaleoni',
+        'customer' => 'Riccardo Voltolina',
+        'phone_number' => '+393356293026',
+        'order_date' => '2023-08-15',
+        'delivery_date' => '2023-08-15',
+    ],
+    [
+        'address' => 'via roma 42',
+        'customer' => 'Maria Rossi',
+        'phone_number' => '+391234567890',
+        'order_date' => '2023-08-16',
+        'delivery_date' => '2023-08-17',
+    ],
+    [
+        'address' => 'piazza garibaldi 7',
+        'customer' => 'Luca Bianchi',
+        'phone_number' => '+393939393939',
+        'order_date' => '2023-08-18',
+        'delivery_date' => '2023-08-19',
+    ],
+    [
+        'address' => 'corso verdi 23',
+        'customer' => 'Giulia Neri',
+        'phone_number' => '+394949494949',
+        'order_date' => '2023-08-20',
+        'delivery_date' => '2023-08-21',
+    ],
+    [
+        'address' => 'via delle stelle 8',
+        'customer' => 'Marco Verdi',
+        'phone_number' => '+397878787878',
+        'order_date' => '2023-08-22',
+        'delivery_date' => '2023-08-23',
+    ],
+    [
+        'address' => 'corso italia 15',
+        'customer' => 'Paola Gialli',
+        'phone_number' => '+390606060606',
+        'order_date' => '2023-08-24',
+        'delivery_date' => '2023-08-25',
+    ],
+];
+
+
+$typologies = [
+    ['cinese'],
+    ['italiana'],
+    ['messicana'],
+    ['giapponese'],
+    ['francese'],
+    ['indiana'],
+];
+
