@@ -228,7 +228,7 @@ $typologies = [
     ['italiana'],
     ['messicana'],
     ['giapponese'],
-    ['francese'],
+    ['coreano'],
     ['indiana'],
 ];
 
