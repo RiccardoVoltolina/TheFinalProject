@@ -2,42 +2,42 @@ $owners = [
     [
         "email" => "riky.gigi@live.com",
         "password" => "hjdchjb",
-        "nameCognome" => "Gigi Calogero",
+        “restaurantName” => "rosso pomodoro",
         "Piva" => 12345678910,
         "address" => "via roma 3",
     ],
     [
         "email" => "john.doe@example.com",
         "password" => "abc123",
-        "nameCognome" => "John Doe",
+        "restaurantName" => "green garden",
         "Piva" => 98765432101,
         "address" => "123 Main St",
     ],
     [
         "email" => "alice.smith@example.com",
         "password" => "xyz456",
-        "nameCognome" => "Alice Smith",
+        "restaurantName" => "ocean delight",
         "Piva" => 55555555555,
         "address" => "456 Oak Ave",
     ],
     [
         "email" => "sara.jones@example.com",
         "password" => "pass789",
-        "nameCognome" => "Sara Jones",
+        "restaurantName" => "spicy sensation",
         "Piva" => 11112222333,
         "address" => "789 Pine Rd",
     ],
     [
         "email" => "mario.rossi@example.com",
         "password" => "mypass",
-        "nameCognome" => "Mario Rossi",
+        "restaurantName" => "sweet retreat",
         "Piva" => 44446666777,
         "address" => "567 Birch Lane",
     ],
     [
         "email" => "emma.white@example.com",
         "password" => "emma123",
-        "nameCognome" => "Emma White",
+        "restaurantName" => "urban bites",
         "Piva" => 88889999000,
         "address" => "890 Cedar Street",
     ],
@@ -57,27 +57,27 @@ $restaurants = [
     [
         "name" => "green garden",
         "rating" => 4.50,
-        "cover_image" => "green_garden.jpg",
+        "cover_image" => "",
     ],
     [
         "name" => "ocean delight",
         "rating" => 4.20,
-        "cover_image" => "ocean_delight.png",
+        "cover_image" => "",
     ],
     [
         "name" => "spicy sensation",
         "rating" => 3.80,
-        "cover_image" => "spicy_sensation.jpeg",
+        "cover_image" => "",
     ],
     [
         "name" => "sweet retreat",
         "rating" => 4.75,
-        "cover_image" => "sweet_retreat.jpg",
+        "cover_image" => "",
     ],
     [
         "name" => "urban bites",
         "rating" => 4.10,
-        "cover_image" => "urban_bites.png",
+        "cover_image" => "",
     ],
 ];
 
@@ -93,11 +93,11 @@ $products = [
         "is_available" => true,
         "cover_image" => "",
         "allergen_tags" => [
-            'lattosio' => true,
-            'glutine' => false,
-            'crostacei' => false,
-            'cereali' => false,
-            'frutta_secca' => false,
+            'lactose' => true,
+            'gluten' => false,
+            'shellfish' => false,
+            'corn' => false,
+            'nuts' => false,
         ],
     ],
     [
@@ -108,11 +108,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -124,11 +124,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -140,11 +140,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ]
 
@@ -156,11 +156,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -172,11 +172,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -188,11 +188,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => true,
+        'lactose' => true,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => true,
     ],
 ],
 
@@ -206,11 +206,11 @@ $products = [
         "is_available" => true,
         "cover_image" => "pizza_margherita.jpg",
         "allergen_tags" => [
-            'lattosio' => true,
-            'glutine' => true,
-            'crostacei' => false,
-            'cereali' => false,
-            'frutta_secca' => false,
+            'lactose' => true,
+            'gluten' => true,
+            'shellfish' => false,
+            'corn' => false,
+            'nuts' => false,
         ],
     ],
     [
@@ -224,8 +224,8 @@ $products = [
             'lactose' => false,
             'gluten' => false,
             'shellfish' => false,
-            'cereali' => false,
-            'frutta_secca' => false,
+            'corn' => false,
+            'nuts' => false,
         ],
     ],
     [
@@ -239,8 +239,8 @@ $products = [
             'lactose' => true,
             'gluten' => true,
             'shellfish' => false,
-            'cereali' => false,
-            'frutta_secca' => false,
+            'corn' => false,
+            'nuts' => false,
         ],
     ],
     [
@@ -254,8 +254,8 @@ $products = [
             'lactose' => false,
             'gluten' => false,
             'shellfish' => false,
-            'cereali' => false,
-            'frutta_secca' => false,
+            'corn' => false,
+            'nuts' => false,
         ],
     ],
     [
@@ -269,8 +269,8 @@ $products = [
             'lactose' => false,
             'gluten' => false,
             'shellfish' => true,
-            'cereali' => false,
-            'frutta_secca' => false,
+            'corn' => false,
+            'nuts' => false,
         ],
     ],
 
@@ -284,11 +284,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => false,
-        'crostacei' => true,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => false,
+        'shellfish' => true,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -300,11 +300,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 
 ]
@@ -317,11 +317,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => true,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => true,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -333,11 +333,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -349,11 +349,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -365,11 +365,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -383,11 +383,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -399,11 +399,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -415,11 +415,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -431,11 +431,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -447,11 +447,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => true,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => true,
     ],
 ],
 
@@ -463,11 +463,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -481,11 +481,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => true,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => true,
+        'nuts' => false,
     ],
 
 ],
@@ -498,11 +498,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => true,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => true,
+        'nuts' => false,
     ],
 ],
 
@@ -514,11 +514,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => true,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => true,
+        'nuts' => false,
     ],
 ],
 
@@ -530,11 +530,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => true,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => true,
+        'nuts' => false,
     ],
 ],
 
@@ -546,11 +546,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => true,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => true,
+        'nuts' => false,
     ],
 ],
 
@@ -562,11 +562,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => true,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => true,
+        'nuts' => false,
     ],
 ],
 
@@ -580,11 +580,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => true,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => true,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -596,11 +596,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -612,11 +612,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -628,11 +628,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -644,11 +644,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => true,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => true,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -660,11 +660,11 @@ $products = [
     "is_available" => true,
     "cover_image" => "",
     "allergen_tags" => [
-        'lattosio' => false,
-        'glutine' => false,
-        'crostacei' => false,
-        'cereali' => false,
-        'frutta_secca' => false,
+        'lactose' => false,
+        'gluten' => false,
+        'shellfish' => false,
+        'corn' => false,
+        'nuts' => false,
     ],
 ],
 
@@ -739,6 +739,7 @@ $typologies = [
 
 <!-- migrations -->
 
+<!-- Owner migration -->
 
 <?php
 use Illuminate\Database\Migrations\Migration;
@@ -756,8 +757,7 @@ return new class extends Migration
             $table->id();
             $table->string('email');
             $table->string('password')->unique();
-            $table->foreign('restaurantOwnerId')->references('id')->on('restaurantOwner');
-            $table->string('nameSurname', 60);
+            $table->string('restaurantName', 60);
             $table->tinyInteger('pIva', 60)->unique();
             $table->string('address');
             $table->timestamps();
@@ -772,39 +772,10 @@ return new class extends Migration
 };
 
 
+<!-- Owner migration -->
 
-<?php
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-// importa modello
-return new class extends Migration
-{
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::create('owner', function (Blueprint $table) {
-            $table->id();
-            $table->string('email');
-            $table->string('password')->unique();
-            $table->foreign('restaurantOwnerId')->references('id')->on('restaurantOwner');
-            $table->string('nameSurname', 60);
-            $table->tinyInteger('pIva', 11)->unique();
-            $table->string('address');
-            $table->timestamps();
-        });
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('owner');
-    }
-    };
-};
-// ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 <?php
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -881,7 +852,6 @@ return new class extends Migration
             $table->string('phoneNumber', 15)->nullable();
             $table->string('password')->unique();
             $table->date('orderDate');
-            $table->tinyInteger('quantity');
             $table->date('deliveryDate');
             $table->timestamps();
         });
@@ -916,9 +886,8 @@ return new class extends Migration
             $table->text('description');
             $table->string('coverImage');
             $table->string('ingridients');
-            $table->tinyInteger('quantity');
             $table->enum('allertTag',['gluten', 'lactose', 'spicy', 'veg']);
-            $table->boolean('isAvailable');
+            $table->boolean('isAvailable')->default(true);
             $table->timestamps();
         });
     /**
